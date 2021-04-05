@@ -12,14 +12,13 @@ function compute() {
   document.getElementById( 'rdate').innerHTML = "in the year <mark>" + n + ".</mark>";
 	
 }
-// Update the current slider value (each time you drag the slider handle)
-var myRate = document.getElementById("intrate");
-             var rateLabel = document.getElementById("percent");
-             rateLabel.innerHTML = myRate.value + " %";   //adds petcent sign to slider result
-								
-             myRate.oninput = function () {
-               	rateLabel.innerHTML = this.value + " %";
-               }
+// Update the current slider value (each time you drag the slider handle)								
+function updateRate() {  
+    myRate = document.getElementById("intrate");
+    rateLabel = document.getElementById("percent");
+    rateLabel.innerHTML = myRate.value + " %";   //adds petcent sign to slider result				
+    rateLabel.innerHTML = this.value + " %";  
+}
 //validate principal
 function validatePrincipal(that){
 if (that.value < 1 ){
