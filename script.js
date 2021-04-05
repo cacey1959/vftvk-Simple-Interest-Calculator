@@ -16,10 +16,13 @@ function compute() {
 function updateRate() {  
 	alert("hi")
     myRate = document.getElementById("intrate");
+    alert("1");
     rateLabel = document.getElementById("percent");
-    rateLabel.innerHTML = myRate.value + " %";   //adds petcent sign to slider result				
+    alert("2");
+    rateLabel.innerHTML = myRate.value + " %";   //adds petcent sign to slider result	
+    alert("3");			
     rateLabel.innerHTML = this.value + " %";  
-}
+    alert("4");
 //validate principal
 function validatePrincipal(that){
 if (that.value < 1 ){
