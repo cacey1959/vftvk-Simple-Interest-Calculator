@@ -14,7 +14,7 @@ function compute() {
 }
 // Update the current slider value (each time you drag the slider handle)								
 function updateRate() {  
-	alert("hi")
+	alert("hi");
     myRate = document.getElementById("intrate");
     alert("1");
     rateLabel = document.getElementById("percent");
